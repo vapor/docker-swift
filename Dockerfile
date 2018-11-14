@@ -21,7 +21,7 @@ RUN apt-get -q update && \
 RUN rm -r /var/lib/apt/lists/*    
 
 # Set swift version
-ARG SWIFT_URL=https://swift.org/builds/development/ubuntu1804/swift-DEVELOPMENT-SNAPSHOT-2018-11-01-a/swift-DEVELOPMENT-SNAPSHOT-2018-11-01-a-ubuntu18.04.tar.gz
+ARG SWIFT_URL=https://swift.org/builds/development/ubuntu1804/swift-DEVELOPMENT-SNAPSHOT-2018-11-13-a/swift-DEVELOPMENT-SNAPSHOT-2018-11-13-a-ubuntu18.04.tar.gz
 
 # Download GPG keys, signature and Swift package, then unpack, cleanup and execute permissions for foundation libs
 RUN curl -fSsL $SWIFT_URL -o swift.tar.gz \
